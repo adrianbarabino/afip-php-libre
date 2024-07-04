@@ -63,15 +63,12 @@ Esta librería fue creada con la intención de ayudar a los programadores a usar
 
 ### Instalación
 
-#### Via Composer
-
-```
-composer require afipsdk/afip.php
-```
 
 #### Via Manual
+(Antes se podia con Composer pero el proyecto ahora es pago, así que es mejor hacerlo manual) 
 1. Clonarlo con `git clone` o descargar el repositorio desde [aqui](https://github.com/AfipSDK/afip.php/archive/refs/heads/master.zip "Descargar repositorio").
 2. Copiar el contenido de la carpeta *res* a tu aplicación.
+
 
 **Importante** 
 * Remplazar `Afip_res/cert` por tu certificado provisto por AFIP y `Afip_res/key` por la clave generada. 
