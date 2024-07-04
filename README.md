@@ -42,6 +42,14 @@ Esta librería fue creada con la intención de ayudar a los programadores a usar
 
 ### Instalación
 
+#### Via Composer
+
+Podés instalar la librería utilizando Composer. Ejecutá el siguiente comando en tu terminal:
+
+```bash
+composer require adrianbarabino/afip-php-libre
+```
+
 #### Via Manual
 1. Clonarlo con `git clone` o descargar el repositorio desde [aqui](https://github.com/adrianbarabino/afip-php-libre/archive/refs/heads/master.zip "Descargar repositorio").
 2. Copiar el contenido de la carpeta *res* a tu aplicación.
