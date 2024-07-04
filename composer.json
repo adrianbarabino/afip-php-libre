@@ -1,9 +1,9 @@
 {
-    "name": "afipsdk/afip.php",
+    "name": "adrianbarabino/afip-php-libre",
     "type": "library",
-    "description": "Libreria para usar los Web Services de AFIP (Argentina) ",
-    "keywords": ["afip","facturacion-electronica","gratis","soap","cae","padron","contribuyente","libreria"],
-    "homepage": "https://github.com/afipsdk/afip.php",
+    "description": "Libreria para usar los Web Services de AFIP de manera gratuita (Argentina)",
+    "keywords": ["afip", "facturacion-electronica", "afip-php", "gratis", "soap", "cae", "padron", "contribuyente", "libreria"],
+    "homepage": "https://github.com/adrianbarabino/afip-php-libre",
     "license": "MIT",
     "require": {
         "php": ">=5.3.3"
@@ -12,9 +12,13 @@
         {
             "name": "Afip SDK",
             "email": "afipsdk@gmail.com"
+        },
+        {
+            "name": "Adrian Barabino",
+            "email": "adrianbarabino@brote.org"
         }
     ],
     "autoload": {
-        "files": [ "src/Afip.php" ]
+        "files": ["src/Afip.php"]
     }
 }
