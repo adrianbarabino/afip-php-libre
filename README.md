@@ -1,33 +1,22 @@
 
 
-<!-- PROJECT SHIELDS -->
-[![Packagist][packagist-shield]](https://packagist.org/packages/afipsdk/afip.php)
-[![Contributors][contributors-shield]](https://github.com/afipsdk/afip.php/graphs/contributors)
-[![Closed issues][issues-shield]](https://github.com/afipsdk/afip.php/issues)
-[![License][license-shield]](https://github.com/afipsdk/afip.php/blob/master/LICENSE)
 
 
 <!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/afipsdk/afip.php">
-    <img src="https://github.com/afipsdk/afipsdk.github.io/blob/master/images/logo-colored.png" alt="Logo" width="130" height="130">
-  </a>
+
 
   <h3 align="center">Afip.php</h3>
 
   <p align="center">
     Librería para conectarse a los Web Services de AFIP
     <br />
-    <a href="https://github.com/afipsdk/afip.php/wiki"><strong>Explorar documentación »</strong></a>
+    <a href="https://github.com/adrianbarabino/afip.php/wiki"><strong>Explorar documentación »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/afipsdk/afip.php/issues">Reportar un bug</a>
+    <a href="https://github.com/adrianbarabino/afip.php/issues">Reportar un bug</a>
   </p>
 </p>
-<p align="center">
-    <img src="https://github.com/afipsdk/afipsdk.github.io/blob/master/images/implementation.png" alt="Implementation">
-</p>
+
 
 <!-- TABLE OF CONTENTS -->
 ## Tabla de contenidos
@@ -53,9 +42,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Acerca del proyecto
-Afip SDK es la forma más rápida y simple de conectarse con los Web Services de AFIP.
 
-Esta librería fue creada con la intención de ayudar a los programadores a usar los Web Services de AFIP sin romperse la cabeza ni perder tiempo tratando de entender la complicada documentación que AFIP provee. Ademas forma parte de [Afip SDK](https://afipsdk.com/).
+Esta librería fue creada con la intención de ayudar a los programadores a usar los Web Services de AFIP sin romperse la cabeza ni perder tiempo tratando de entender la complicada documentación que AFIP provee. Pero luego pasó a ser un proyecto pago, como está bajo licencia MIT pude recuperarlo
 
 
 <!-- START GUIDE -->
@@ -66,7 +54,7 @@ Esta librería fue creada con la intención de ayudar a los programadores a usar
 
 #### Via Manual
 (Antes se podia con Composer pero el proyecto ahora es pago, así que es mejor hacerlo manual) 
-1. Clonarlo con `git clone` o descargar el repositorio desde [aqui](https://github.com/AfipSDK/afip.php/archive/refs/heads/master.zip "Descargar repositorio").
+1. Clonarlo con `git clone` o descargar el repositorio desde [aqui](https://github.com/adrianbarabino/afip.php/archive/refs/heads/master.zip "Descargar repositorio").
 2. Copiar el contenido de la carpeta *res* a tu aplicación.
 
 
@@ -91,7 +79,7 @@ $afip = new Afip(array('CUIT' => 20111111112));
 ````
 
 
-Para más información acerca de los parámetros que se le puede pasar a la instancia new `Afip()` consulte sección [Primeros pasos](https://github.com/afipsdk/afip.php/wiki/Primeros-pasos#como-usarlo) de la documentación
+Para más información acerca de los parámetros que se le puede pasar a la instancia new `Afip()` consulte sección [Primeros pasos](https://github.com/adrianbarabino/afip.php/wiki/Primeros-pasos#como-usarlo) de la documentación
 
 Una vez realizado esto podemos comenzar a usar el SDK con los Web Services disponibles
 
@@ -99,28 +87,26 @@ Una vez realizado esto podemos comenzar a usar el SDK con los Web Services dispo
 <!-- WEB SERVICES -->
 ## Web Services
 
-Si necesitas más información de cómo utilizar algún web service echa un vistazo a la [documentación completa de afip.php](https://github.com/afipsdk/afip.php/wiki)
+Si necesitas más información de cómo utilizar algún web service echa un vistazo a la [documentación completa de afip.php](https://github.com/adrianbarabino/afip.php/wiki)
 
 ### Factura electrónica
-Podes encontrar la documentación necesaria para utilizar la [facturación electrónica](https://github.com/afipsdk/afip.php/wiki/Facturaci%C3%B3n-Electr%C3%B3nica) 👈 aquí
+Podes encontrar la documentación necesaria para utilizar la [facturación electrónica](https://github.com/adrianbarabino/afip.php/wiki/Facturaci%C3%B3n-Electr%C3%B3nica) 👈 aquí
 
 ### Padrón alcance 4
-El Servicio Web de Consulta de Padrón denominado A4 ha quedado limitado para Organismos Públicos, si lo necesitas puedes leer la documentación de [consulta al padrón de AFIP alcance 4](https://github.com/afipsdk/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-4)
+El Servicio Web de Consulta de Padrón denominado A4 ha quedado limitado para Organismos Públicos, si lo necesitas puedes leer la documentación de [consulta al padrón de AFIP alcance 4](https://github.com/adrianbarabino/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-4)
 
 ### Padrón alcance 5
-Quienes usaban el padrón A4 pueden utilizar este padrón en modo de remplazo, si queres saber cómo echa un vistazo a la documentación de [consulta al padrón de AFIP alcance 5](https://github.com/afipsdk/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-5)
+Quienes usaban el padrón A4 pueden utilizar este padrón en modo de remplazo, si queres saber cómo echa un vistazo a la documentación de [consulta al padrón de AFIP alcance 5](https://github.com/adrianbarabino/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-5)
 
 ### Padrón alcance 10
-Si tenes que utilizar este web service también está disponible dentro de la librería, su documentación se encuentra en [consulta al padrón de AFIP alcance 10](https://github.com/afipsdk/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-10)
+Si tenes que utilizar este web service también está disponible dentro de la librería, su documentación se encuentra en [consulta al padrón de AFIP alcance 10](https://github.com/adrianbarabino/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-10)
 
 ### Padrón alcance 13
-Si debes consultar por el CUIT de una persona física tendrás que utilizar este web service, su documentación se encuentra disponible en la wiki de [consulta al padrón de AFIP alcance 13](https://github.com/AfipSDK/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-13)
+Si debes consultar por el CUIT de una persona física tendrás que utilizar este web service, su documentación se encuentra disponible en la wiki de [consulta al padrón de AFIP alcance 13](https://github.com/adrianbarabino/afip.php/wiki/Consulta-al-padron-de-AFIP-alcance-13)
 
 ### Otro web service
 Si necesitas usar algún otro web service la versión PRO incluye un tutorial completo para integrar cualquier otro web service de AFIP
 
-
-**[Saber más](https://afipsdk.com/pro.html)**
 
 
 <!-- MIGRATION -->
@@ -128,25 +114,7 @@ Si necesitas usar algún otro web service la versión PRO incluye un tutorial co
 ¿Necesitas migrar de versión de la librería?
 
 Pueden encontrar el tutorial correspondiente aquí 👇
-- [Migrar de v0.1 a v0.5](https://github.com/afipsdk/afip.php/wiki/Migrar-de-v0.1-a-v0.5)
-
-
-<!-- RELATED PROJECTS-->
-### Proyectos relacionados
-
-#### Libreria para Javascript
-Si necesitas acceder los web services de AFIP en **Javascript** podes utilizar [Afip.js](https://github.com/afipsdk/afip.js)
-
-#### Bundle para Symfony
-Si necesitas utilizar los web services de Afip en _Symfony_ podes utilizar este [bundle](https://github.com/gonzakpo/afip)
-
-<!-- AFIP SDK PRO -->
-### ¿Necesitas ayuda? 🚀
-
-¿Quieres implementarlo de forma rápida y fiable? Obtén Afip SDK PRO que incluye una amplia documentación con ejemplos, tutoriales, implementación en Frameworks y plataformas, y mucho más.
-
-
-**[Saber más](https://afipsdk.com/pro.html)**
+- [Migrar de v0.1 a v0.5](https://github.com/adrianbarabino/afip.php/wiki/Migrar-de-v0.1-a-v0.5)
 
 
 <!-- LICENCE -->
@@ -154,18 +122,7 @@ Si necesitas utilizar los web services de Afip en _Symfony_ podes utilizar este 
 Distribuido bajo la licencia MIT. Vea `LICENSE` para más información.
 
 
-<!-- CONTACT -->
-### Contacto
-Afip SDK - afipsdk@gmail.com
-
-Link del proyecto: [https://github.com/afipsdk/afip.php](https://github.com/afipsdk/afip.php)
 
 
 _Este software y sus desarrolladores no tienen ninguna relación con la AFIP._
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[packagist-shield]: https://img.shields.io/packagist/dt/afipsdk/afip.php.svg??logo=php&?logoColor=white
-[contributors-shield]: https://img.shields.io/github/contributors/afipsdk/afip.php.svg?color=orange
-[issues-shield]: https://img.shields.io/github/issues-closed-raw/afipsdk/afip.php.svg?color=blueviolet
-[license-shield]: https://img.shields.io/github/license/afipsdk/afip.php.svg?color=blue
 
