@@ -65,6 +65,49 @@ class RegisterInscriptionProof extends AfipWebService {
 		}
 	}
 
+
+	
+	/**
+	 * Asks to web service for taxpayer type {@see WS
+	 * Specification item 3.2}
+	 * first get the taxpayer details and then return the type
+	 * 
+	 * @since 1.1
+	 * 
+	*/
+
+	public function GetTaxpayerType($identifier)
+	{
+		$data = $this->GetTaxpayerDetails($identifier);
+
+
+
+		if (isset($data->datosRegimenGeneral->impuesto)) {
+			foreach ($data->datosRegimenGeneral->impuesto as $impuesto) {
+				if (strpos($impuesto->descripcionImpuesto, 'IVA EXENTO') !== false) {
+					return 'Iva Exento';
+				}
+				if ($impuesto->idImpuesto == 30) {
+					return 'Responsable Inscripto';
+				}
+			}
+		}
+
+		if (isset($data->datosMonotributo->impuesto)) {
+			
+			foreach ($data->datosMonotributo->impuesto as $impuesto) {
+				
+				if ($impuesto == 20) {
+					return 'Responsable Monotributo';
+				}
+			}
+		}
+
+		return 'Consumidor Final';
+
+
+	}
+
 	/**
 	 * Asks to web service for taxpayers details 
 	 *
