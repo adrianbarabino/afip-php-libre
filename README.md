@@ -24,7 +24,7 @@
   * [Padrón alcance 4](#padrón-alcance-4)
   * [Padrón alcance 10](#padrón-alcance-10)
   * [Padrón alcance 13](#padrón-alcance-13)
-  * [Consulta Inscripción](#consulta-inscripcion-padron-a5)
+  * [Consulta Inscripción](#consulta-de-inscripción-padrón-a5)
   * [🎉 Otro web service](#otro-web-service)
 * [Migración](#migración)
 * [Proyectos relacionados](#proyectos-relacionados)
